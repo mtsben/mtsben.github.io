@@ -18,7 +18,7 @@
 <link href="../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="../assets/icons/site.webmanifest" rel="manifest"/>
 <meta content="#0f1115" name="theme-color"/>
-<link href="../assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="Mathis Benchikh" name="author"/><link href="../assets/css/personalization.css" rel="stylesheet"/></head>
+<link href="../assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="Mathis Benchikh" name="author"/><link href="../assets/css/personalization.css?v=10" rel="stylesheet"/></head>
 <body class="homepage resume-page">
 <div class="app-layout">
 <!-- ===================== SIDEBAR ===================== -->
@@ -73,22 +73,27 @@
 <p class="page-subtitle">// CV_DATABASE</p>
 <h1 class="page-title">Curriculum Vitae</h1>
 </div>
-<div style="text-align: right;">
-<a class="tech-badge" download="cv_Mathis_Benchikh.pdf" href="../assets/documents/resume/cv-mathis-benchikh.pdf" style="text-decoration: none; font-size: 0.9rem; padding: 12px 25px; border-color: #38bdf8; color: #38bdf8; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; background: rgba(56, 189, 248, 0.05);">
-<i class="fas fa-download"></i> EXTRACT PDF
-           </a>
+<div class="resume-actions">
+<div aria-label="CV language" class="resume-language-options" role="group">
+<button aria-pressed="true" class="resume-version-button" data-pdf="../assets/documents/resume/cv-mathis-benchikh-en.pdf" data-resume-language="en" type="button">English version</button>
+<button aria-pressed="false" class="resume-version-button" data-pdf="../assets/documents/resume/cv-mathis-benchikh-fr.pdf" data-resume-language="fr" type="button">French version</button>
+</div>
+<a class="resume-download" download="Mathis_Benchikh_CV_EN.pdf" href="../assets/documents/resume/cv-mathis-benchikh-en.pdf" id="resume-download">
+<i aria-hidden="true" class="fas fa-download"></i><span id="resume-download-label">Download PDF (EN)</span>
+</a>
 </div>
 </header>
 <div class="content-grid">
 <div class="col-12 slide-up delay-2">
 <div class="pdf-container-new" style="height: 85vh; border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; background-color: #1e293b;">
-<iframe src="../assets/documents/resume/cv-mathis-benchikh.pdf" style="width: 100%; height: 100%; border: none;" title="Mathis Benchikh’s resume — French PDF"></iframe>
+<iframe id="resume-viewer" src="../assets/documents/resume/cv-mathis-benchikh-en.pdf" style="width: 100%; height: 100%; border: none;" title="Mathis Benchikh’s CV — English version"></iframe>
 </div>
 </div>
 </div>
 </main>
 </div>
 <script src="../assets/js/script.js?v=9"></script>
+<script src="../assets/js/resume.js?v=1"></script>
 </body>
 </html>
 
