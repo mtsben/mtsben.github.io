@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Preliminary design of a 7 kW industrial spur-gear reducer, from requirements and architecture to component sizing and assembly integration." name="description"/>
+<title>Industrial Gear Reducer | Mathis Benchikh</title>
+<link href="reducer.html" hreflang="en" rel="alternate"/>
+<link href="../../fr/projects/reducer.html" hreflang="fr" rel="alternate"/>
+<link href="reducer.html" hreflang="x-default" rel="alternate"/>
+<link href="../../assets/css/style.css?v=10" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../../assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#0f1115" name="theme-color"/>
+<link href="../../assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="Mathis Benchikh" name="author"/><link href="../../assets/css/personalization.css" rel="stylesheet"/></head>
+<body class="homepage turbine-page reducer-page">
+<div class="app-layout">
+<aside class="sidebar slide-up">
+<div class="profile-section">
+<a href="../index.html" style="text-decoration: none; color: inherit;">
+<span class="logo-text">MB.</span>
+</a>
+<span class="role-text">GRADUATE ENGINEERING STUDENT<br/>Arts et Métiers · Cranfield</span>
+</div>
+<nav class="nav-links">
+<a class="nav-item" href="../index.html"><i class="fas fa-home"></i> Dashboard</a>
+<a class="nav-item active" href="../projects.html"><i class="fas fa-code-branch"></i> Projects</a>
+<a class="nav-item" href="../resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+<a class="nav-item" href="../academics.html"><i class="fas fa-graduation-cap"></i> Academics</a>
+<a class="nav-item" href="../experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+<a class="nav-item" href="../beyond.html"><i class="fas fa-compass"></i> Beyond Engineering</a>
+</nav>
+<div class="sidebar-footer">
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+<a aria-label="Mathis Benchikh's LinkedIn profile" href="https://www.linkedin.com/in/mathis-benchikh-968475348/" rel="noopener noreferrer" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a aria-label="Email Mathis Benchikh" href="mailto:benchikh.mathis@gmail.com" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;"><i class="fas fa-envelope"></i></a>
+</div>
+<p style="opacity: 0.5; font-size: 0.75rem; margin: 0;">© 2026 Mathis Benchikh</p>
+</div>
+</aside>
+<main class="main-content turbine-main">
+<div class="slide-up delay-1 turbine-back-link">
+<a href="../projects.html"><i class="fas fa-arrow-left"></i> RETURN TO MATRIX</a>
+</div>
+<header class="turbine-hero reducer-hero slide-up delay-1">
+<img alt="Cross-sectional preliminary design of the industrial gear reducer" fetchpriority="high" src="../../assets/images/projects/reducer/assembly-section.webp"/>
+<div class="turbine-hero-overlay"></div>
+<div class="turbine-hero-content">
+<span class="turbine-eyebrow">// MACHINE DESIGN · PRELIMINARY ENGINEERING</span>
+<h1>Industrial Gear Reducer</h1>
+<p>A system-level preliminary design connecting requirements, spur-gear sizing, shafts, bearings, sealing, lubrication, and a mount-ready housing concept.</p>
+<div class="turbine-hero-actions">
+<a class="turbine-button turbine-button-primary" download="E13-Rapport-Reducteur-Avant-Projet-V3-FR.pdf" href="../../assets/documents/projects/reducer/e13-rapport-reducteur-avant-projet-v3-fr.pdf">
+<i class="fas fa-download"></i> Download Full Report (FR)
+            </a>
+</div>
+</div>
+</header>
+<section aria-label="Project key figures" class="turbine-metrics slide-up delay-2">
+<article><strong>7 kW</strong><span>power requirement</span></article>
+<article><strong>4.5</strong><span>reduction ratio</span></article>
+<article><strong>1,500 rpm</strong><span>input speed</span></article>
+<article><strong>≥22,000 h</strong><span>target service life</span></article>
+</section>
+<div class="project-overview"><section class="turbine-intro glass-panel slide-up delay-2">
+<div>
+<span class="turbine-section-index">01 · MISSION</span>
+<h2>Turn a requirement into a coherent machine</h2>
+</div>
+<p>
+          This team study developed a detailed preliminary concept rather than a production-released gearbox. The work moved from functional analysis and trade-offs to calculated component sizes, standard-part selection, maintenance interfaces, and a complete assembly sketch.
+        </p>
+</section><aside aria-label="TOOLS AND COMPONENTS" class="project-tools-panel glass-panel"><h3>// TOOLS AND COMPONENTS</h3><ul><li>Excel</li><li>Spur-gear sizing</li><li>Bearing selection</li><li>Assembly drawings</li><li>Lubrication study</li></ul></aside></div>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">02 · SYSTEM ARCHITECTURE</span>
+<h2>Define the boundaries before sizing the parts</h2>
+</div>
+<div class="turbine-gallery reducer-gallery-architecture">
+<figure class="turbine-figure">
+<button aria-label="Enlarge the reducer system boundary diagram" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Reducer positioned between the motor and driven machine with input and output couplings" loading="lazy" src="../../assets/images/projects/reducer/system-boundary.webp"/>
+</button>
+<figcaption><strong>System boundary</strong><span>The gearbox is isolated from the motor, receiver, and couplings while preserving every mounting interface.</span></figcaption>
+</figure>
+<figure class="turbine-figure">
+<button aria-label="Enlarge the general reducer architecture" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Front and side schematic of the reducer showing the input shaft, output shaft, and spur gears" loading="lazy" src="../../assets/images/projects/reducer/system-architecture.webp"/>
+</button>
+<figcaption><strong>General architecture</strong><span>Two parallel shafts and one spur-gear stage deliver the required 4.5 ratio.</span></figcaption>
+</figure>
+</div>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">03 · DESIGN TRADE-OFF</span>
+<h2>Keep the gears aligned under load</h2>
+</div>
+<div class="turbine-gallery reducer-gallery-choice">
+<figure class="turbine-figure">
+<button aria-label="Compare overhung and straddle-mounted gear architectures" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Comparison of overhung and straddle-mounted gear and bearing arrangements" loading="lazy" src="../../assets/images/projects/reducer/mounting-options.webp"/>
+</button>
+<figcaption><strong>Two candidate layouts</strong><span>Overhung mounting saves access; straddle mounting supports each gear on both sides.</span></figcaption>
+</figure>
+<figure class="turbine-figure">
+<button aria-label="Enlarge the shaft deflection comparison" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Shaft deflection comparison showing improved gear alignment with straddle mounting" loading="lazy" src="../../assets/images/projects/reducer/mounting-deflection.webp"/>
+</button>
+<figcaption><strong>Selected: straddle mounting</strong><span>Bearing support on both sides limits shaft slope and tooth misalignment.</span></figcaption>
+</figure>
+</div>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">04 · GEARSET</span>
+<h2>Size, verify, then remove unnecessary width</h2>
+</div>
+<div class="turbine-gallery reducer-gallery-gear">
+<figure class="turbine-figure">
+<button aria-label="Enlarge the gear module selection table" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Gear module and tooth-count selection table highlighting module 5 with 12 and 54 teeth" loading="lazy" src="../../assets/images/projects/reducer/gear-options.webp"/>
+</button>
+<figcaption><strong>Geometry selection</strong><span>Module 5 with 12/54 teeth produces the exact 4.5 ratio.</span></figcaption>
+</figure>
+<figure class="turbine-figure">
+<button aria-label="Enlarge the optimized gear verification" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Gear verification software showing the optimized 42 millimetre face width and admissible power" loading="lazy" src="../../assets/images/projects/reducer/gear-validation.webp"/>
+</button>
+<figcaption><strong>Verified after optimization</strong><span>The face width was reduced to 42 mm while retaining admissible power above the 7 kW requirement.</span></figcaption>
+</figure>
+</div>
+<div aria-label="Selected gear geometry" class="reducer-spec-strip">
+<div><span>Material</span><strong>35CrMo4</strong></div>
+<div><span>Pitch diameters</span><strong>60 / 270 mm</strong></div>
+<div><span>Tooth count</span><strong>12 / 54</strong></div>
+<div><span>Face width</span><strong>42 mm</strong></div>
+</div>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">05 · SHAFTS &amp; STANDARD PARTS</span>
+<h2>Carry the loads into manufacturable interfaces</h2>
+</div>
+<div class="turbine-gallery reducer-gallery-shafts">
+<figure class="turbine-figure">
+<button aria-label="Enlarge the shaft bending and torsion model" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Bending moment and torsional moment diagrams used for shaft sizing" loading="lazy" src="../../assets/images/projects/reducer/shaft-load-diagram.webp"/>
+</button>
+<figcaption><strong>Bending + torsion model</strong><span>Bearing reactions and gear forces define the two critical shaft zones.</span></figcaption>
+</figure>
+<figure class="turbine-figure">
+<button aria-label="Enlarge the shaft sizing spreadsheet" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Spreadsheet calculating minimum input and output shaft diameters from gear loads" loading="lazy" src="../../assets/images/projects/reducer/shaft-sizing-sheet.webp"/>
+</button>
+<figcaption><strong>Calculated shaft minima</strong><span>Input zones: 19/21 mm. Output zones: 32/32 mm.</span></figcaption>
+</figure>
+<figure class="turbine-figure reducer-bearing-card">
+<button aria-label="Enlarge the input bearing selection" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="SKF catalog comparison highlighting the 6005 bearing for the input shaft" loading="lazy" src="../../assets/images/projects/reducer/input-bearing-selection.webp"/>
+</button>
+<figcaption><strong>Input bearing</strong><span>Radial ball bearing 6005, with a 25 mm bore.</span></figcaption>
+</figure>
+<figure class="turbine-figure reducer-bearing-card">
+<button aria-label="Enlarge the output bearing selection" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="SKF catalog comparison highlighting the 61909 bearing for the output shaft" loading="lazy" src="../../assets/images/projects/reducer/output-bearing-selection.webp"/>
+</button>
+<figcaption><strong>Output bearing</strong><span>Radial ball bearing 61909, with a 45 mm bore.</span></figcaption>
+</figure>
+</div>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">06 · HOUSING &amp; LUBRICATION</span>
+<h2>Design for life, sealing, and maintenance</h2>
+</div>
+<div class="turbine-gallery reducer-gallery-housing">
+<figure class="turbine-figure">
+<button aria-label="Enlarge the oil selection table" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Oil-selection table based on gear diameter, speed, and line load" loading="lazy" src="../../assets/images/projects/reducer/lubrication-selection.webp"/>
+</button>
+<figcaption><strong>Splash lubrication</strong><span>Oil cooling and distribution support a calculated minimum fill of approximately 0.48 L.</span></figcaption>
+</figure>
+<figure class="turbine-figure">
+<button aria-label="Enlarge the housing material selection chart" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Ashby chart comparing cast iron, aluminium, and magnesium alloys for the housing" loading="lazy" src="../../assets/images/projects/reducer/material-selection.webp"/>
+</button>
+<figcaption><strong>Cast-iron housing</strong><span>Fatigue capability and cost led to a sand-cast housing with an 8 mm preliminary wall thickness.</span></figcaption>
+</figure>
+</div>
+<div class="turbine-result-callout reducer-result-callout">
+<div><span>Maintenance concept</span><strong>Fill · level · drain</strong></div>
+<p>Static and dynamic sealing, an oil-level indicator, fill and drain plugs, bolted feet, and coupling-ready shaft ends were integrated into the same concept.</p>
+</div>
+</section>
+<section class="turbine-section slide-up" id="integrated-design">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">07 · INTEGRATED CONCEPT</span>
+<h2>Bring every local decision into one assembly</h2>
+</div>
+<div class="reducer-integration-grid">
+<figure class="turbine-figure reducer-integration-primary">
+<button aria-label="Enlarge the complete reducer cross-section" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Complete reducer cross-section with gears, shafts, bearings, seals, housing, and cover" loading="lazy" src="../../assets/images/projects/reducer/assembly-section.webp"/>
+</button>
+<figcaption><strong>Complete cross-section</strong><span>The gearset, shafts, bearings, seals, cover, and casing are resolved in one 1:1 preliminary sketch.</span></figcaption>
+</figure>
+<figure class="turbine-figure">
+<button aria-label="Enlarge the housing front view" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Front view of the reducer housing with gear envelopes, fasteners, fill plug, and feet" loading="lazy" src="../../assets/images/projects/reducer/housing-front-view.webp"/>
+</button>
+<figcaption><strong>Housing front view</strong><span>Gear envelopes, fasteners, filling access, centring, and floor mounting are positioned together.</span></figcaption>
+</figure>
+<figure class="turbine-figure reducer-integration-wide">
+<button aria-label="Enlarge the annotated reducer assembly" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Annotated reducer cross-section showing functional surfaces and component interfaces" loading="lazy" src="../../assets/images/projects/reducer/annotated-assembly.webp"/>
+</button>
+<figcaption><strong>Functional surfaces</strong><span>The annotated view prepares the transition from preliminary design to detailed tolerancing and manufacturing definition.</span></figcaption>
+</figure>
+</div>
+<p class="reducer-limit-note"><strong>Scope:</strong> calculated preliminary design. Detailed fatigue, thermal, vibration, tolerance, cost, and physical validation remain future project phases.</p>
+</section>
+<section class="turbine-report-cta reducer-report-cta slide-up">
+<div>
+<span class="turbine-section-index">PROJECT DOCUMENTATION</span>
+<h2>Read the full preliminary-design report</h2>
+<p>The complete 54-page engineering report is available in French.</p>
+</div>
+<a class="turbine-button turbine-button-primary" download="E13-Rapport-Reducteur-Avant-Projet-V3-FR.pdf" href="../../assets/documents/projects/reducer/e13-rapport-reducteur-avant-projet-v3-fr.pdf">
+<i class="fas fa-download"></i> Download Full Report (FR)
+        </a>
+</section>
+</main>
+</div>
+<script src="../../assets/js/script.js?v=10"></script>
+</body>
+</html>
+

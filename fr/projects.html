@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Projets d'ingénierie | Mathis Benchikh</title><link href="../en/projects.html" hreflang="en" rel="alternate"/><link href="projects.html" hreflang="fr" rel="alternate"/><link href="../en/projects.html" hreflang="x-default" rel="alternate"/>
+<link href="../assets/css/style.css?v=11" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#0f1115" name="theme-color"/>
+<style>
+    /* === ANIMATIONS DES CARTES PROJETS === */
+    .project-card-new {
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      backface-visibility: hidden;
+    }
+
+    .project-card-new:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+      border-color: #c7ced8;
+    }
+
+    .project-card-new .project-img-container img {
+      transition: transform 0.5s ease;
+    }
+
+    .project-card-new:hover .project-img-container img {
+      transform: scale(1.03);
+    }
+
+    /* === STYLE DU LIEN (TEXTE SEULEMENT) === */
+    .action-link {
+        transition: color 0.3s ease, transform 0.2s ease;
+        text-decoration: none;
+
+        /* COULEUR PAR DÉFAUT : Gris */
+        color: #596170;
+
+        /* SUPPRESSION TOTALE DES BORDURES/FONDS */
+        border: none !important;
+        background: transparent !important;
+        outline: none !important;
+        box-shadow: none !important;
+
+        padding: 5px 0;
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    /* Règle : Quand on survole la CARTE, le TEXTE devient BLEU */
+    .project-card-new:hover .action-link,
+    .glass-panel:hover .action-link {
+        color: #111827 !important;
+    }
+
+    /* Règle : Au survol direct du LIEN */
+    .action-link:hover {
+        color: #2b3545 !important;
+    }
+
+    /* Effet au CLIC */
+    .action-link:active {
+        transform: scale(0.95);
+        color: #111827 !important;
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+  </style>
+<link href="../assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="Mathis Benchikh" name="author"/><link href="../assets/css/personalization.css?v=23" rel="stylesheet"/></head>
+<body class="homepage">
+<div class="app-layout">
+<aside class="sidebar slide-up">
+<div class="profile-section">
+<a href="index.html" style="text-decoration: none; color: inherit;">
+<span class="logo-text">MB.</span>
+</a>
+<span class="role-text">ÉLÈVE-INGÉNIEUR<br/>Arts et Métiers · Cranfield</span>
+</div>
+<nav class="nav-links">
+<a class="nav-item" href="index.html">
+<i class="fas fa-home"></i> Accueil
+        </a>
+<a class="nav-item active" href="projects.html">
+<i class="fas fa-code-branch"></i> Projets
+        </a>
+<a class="nav-item" href="resume.html">
+<i class="fas fa-file-alt"></i> CV
+        </a>
+<a class="nav-item" href="academics.html">
+<i class="fas fa-graduation-cap"></i> Formation
+        </a>
+<a class="nav-item" href="experience.html">
+<i class="fas fa-briefcase"></i> Expérience
+        </a>
+<a class="nav-item" href="beyond.html">
+<i class="fas fa-compass"></i> Au-delà de l’ingénierie
+        </a>
+</nav>
+<div class="sidebar-footer">
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+<a aria-label="Profil LinkedIn de Mathis Benchikh" href="https://www.linkedin.com/in/mathis-benchikh-968475348/" onmouseout="this.style.color='#7a8595'" onmouseover="this.style.color='#111827'" rel="noopener noreferrer" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+<!-- <a href="https://github.com/mtsben" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile"
+             style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;"
+             onmouseover="this.style.color='#111827'"
+             onmouseout="this.style.color='#7a8595'">
+            <i class="fab fa-github"></i>
+          </a> -->
+<a aria-label="Écrire à Mathis Benchikh" href="mailto:benchikh.mathis@gmail.com" onmouseout="this.style.color='#7a8595'" onmouseover="this.style.color='#111827'" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+<p style="opacity: 0.5; font-size: 0.75rem; margin: 0;">© 2026 Mathis Benchikh</p>
+</div>
+</aside>
+<main class="main-content">
+<header class="page-header slide-up delay-1">
+<div>
+<h1 class="page-title">Projets d’ingénierie</h1>
+<p style="color: #94a3b8; margin-top: 5px; font-size: 1rem; max-width: 650px;">Une sélection de projets d’ingénierie réalisés en équipe, associant conception mécanique, simulation, commande et outils numériques.</p>
+</div>
+</header>
+<!-- Featured Project: Trajectory Optimisation for Autonomous Drones -->
+<section class="slide-up delay-2" style="margin-bottom: 50px;">
+<article class="glass-panel project-featured" id="trajectory-optimization">
+<img alt="Rover autonome à côté de l'ordinateur contrôlant le système expérimental" class="project-featured-image system-chain-featured-image" src="../paco-showcase/assets/images/system_chain_v01.jpg"/>
+<div class="project-featured-overlay"></div>
+<div class="project-featured-content">
+<span class="page-subtitle project-featured-eyebrow">// RECHERCHE INTERNATIONALE · SINGAPOUR</span>
+<h2>Optimisation de trajectoires pour drones autonomes</h2>
+<p>Stage de recherche de trois mois à <strong>CNRS@CREATE, à Singapour</strong> (juin–août 2026), en collaboration avec le laboratoire PIMM à Paris, dans un environnement de recherche international de haut niveau. Développement en équipe de méthodes d’<strong>optimisation de trajectoires et d’évitement des collisions</strong>, avec des applications au guidage de <strong>drones autonomes</strong>. La chaîne perception–guidage–commande a été validée expérimentalement sur des rovers, en comparant simulations et essais.</p>
+<p>J’ai contribué à la <strong>rédaction d’un article scientifique en tant que co-auteur</strong>, présentant les méthodes développées et leur validation expérimentale. L’article a été soumis au <em>Journal of Control, Automation and Electrical Systems</em> et est <strong>en cours d’évaluation</strong>.</p><h3 class="research-tools-heading">// OUTILS ET COMPOSANTS</h3>
+<div class="tech-stack-row project-featured-tags">
+<span class="tech-badge">Python</span>
+<span class="tech-badge">SciPy</span>
+<span class="tech-badge">Optimisation numérique</span>
+<span class="tech-badge">Vision par ordinateur</span>
+<span class="tech-badge">Guidage-commande</span>
+<span class="tech-badge">Drones autonomes</span>
+</div>
+<div class="research-hero-footer">
+<a class="action-link project-featured-link" href="../paco-showcase/index.html">
+              Découvrir le projet de recherche
+            </a>
+<div class="research-affiliation"><img alt="CNRS@CREATE" src="../paco-showcase/assets/logos/cnrs-at-create.png"/><span>PIMM · Paris<br/>CNRS@CREATE · Singapour</span></div>
+</div>
+</div>
+</article>
+</section>
+<section aria-labelledby="amspace-title" class="amspace-project-section" id="amspace">
+<a aria-label="Découvrir le projet de mini-fusée sur le site AMSPACE (nouvel onglet)" class="beyond-feature featured-card-link research-experience-link amspace-feature-link slide-up delay-2" href="https://amspace.fr/mini-fusee" rel="noopener noreferrer" target="_blank">
+<div class="amspace-hero">
+<img alt="La Terre vue depuis l’espace, image de fond de l’accueil AMSPACE" class="amspace-hero-background" height="1278" src="../assets/images/beyond/amspace-earth-background.webp" width="1920"/>
+<img alt="Logo CNES" class="amspace-cnes-logo" height="1024" src="../assets/images/logos/cnes-white.png" width="942"/>
+</div>
+<div class="beyond-copy">
+<div class="beyond-eyebrow">
+<span class="beyond-kicker"><i aria-hidden="true" class="fas fa-rocket"></i> AMSPACE</span>
+<span class="beyond-date">C’Space · CNES &amp; Planète Sciences</span>
+</div>
+<h2 id="amspace-title">Participation au concours de fusées C’Space du CNES</h2>
+<p class="amspace-context"><strong>C’Space</strong> est un rendez-vous national de projets spatiaux étudiants, organisé par le <strong>CNES et Planète Sciences</strong>. Le défi : concevoir, fabriquer et tester une fusée capable d’emporter des expériences scientifiques et de revenir sous parachute, en respectant un cahier des charges de sécurité et de qualification technique. Avec AMSPACE, l’association astronautique des Arts et Métiers, nous avons développé une mini-fusée à fuselage en carbone pour y participer.</p>
+<p class="amspace-role"><strong>Responsable du pôle théorique et intégration</strong></p>
+<p>J’ai coordonné les travaux de théorie et d’intégration avec les autres pôles, en reliant les simulations, les expériences embarquées et les exigences techniques du véhicule. Mon objectif : assurer leur cohérence avant la présentation de la fusée au concours.</p>
+<dl class="amspace-contributions">
+<div>
+<dt>Expériences embarquées</dt>
+<dd>Conception et mise en place des expériences, en coordination avec l’équipe d’instrumentation, pour étudier la <strong>pression, la vitesse et les charges en vol</strong> et confronter les modèles aux futures mesures.</dd>
+</div>
+<div>
+<dt>Simulation aérodynamique</dt>
+<dd>Réalisation en équipe de <strong>simulations CFD</strong> pour analyser les écoulements autour de la fusée et la distribution de pression, et appuyer les choix de conception aérodynamique.</dd>
+</div>
+<div>
+<dt>Intégration et qualification</dt>
+<dd>Coordination de l’intégration des expériences et des sous-systèmes, réalisation des <strong>vérifications techniques</strong> et préparation des éléments de qualification requis avant la présentation à C’Space.</dd>
+</div>
+</dl>
+<div aria-label="Compétences mobilisées" class="beyond-tags"><span>CFD</span><span>Expérimentation</span><span>Intégration systèmes</span><span>Qualification technique</span><span>Coordination d’équipe</span></div>
+<div class="research-experience-footer amspace-footer">
+<span class="research-experience-cta">Découvrir le projet sur AMSPACE <i aria-hidden="true" class="fas fa-arrow-right"></i></span>
+<img alt="Logo AMSPACE" class="institution-logo amspace-logo" height="500" loading="lazy" src="../assets/images/logos/amspace.png" width="500"/>
+</div>
+</div>
+</a>
+</section>
+<div class="projects-grid slide-up delay-3">
+<!-- Project: Smart Workshop · Data & AI -->
+<article class="project-card-new project-order-22">
+<div class="project-img-container">
+<img alt="Données d'atelier intelligent et tableau de bord IA" src="../assets/images/projects/pjt-ai/cover.png"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // INGÉNIERIE DES DONNÉES · LOCAL IA
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Atelier intelligent · Données &amp; IA
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Un atelier FabLab intelligent reposant sur un pipeline de données structuré et un système d’IA entièrement local pour les requêtes Text-to-SQL.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">Python</span>
+<span class="tech-badge">SQL</span>
+<span class="tech-badge">pandas</span>
+<span class="tech-badge">Streamlit</span>
+<span class="tech-badge">IA locale</span>
+</div>
+<a class="action-link" href="projects/pjt-ai.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: F1 in Schools – Mini Formula 1 Car -->
+<article class="project-card-new project-order-2">
+<div class="project-img-container">
+<img alt="F1 in Schools – Mini voiture de Formule 1" src="../assets/images/projects/f1/cover.png"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // CONCEPTION MÉCANIQUE · FABRICATION
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Mini Formule 1
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Conception et fabrication de bout en bout d'une voiture miniature de Formule 1 pour une course de 20 m.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">CAD</span>
+<span class="tech-badge">CFD (Bases)</span>
+<span class="tech-badge">Usinage CNC</span>
+<span class="tech-badge">Fabrication</span>
+</div>
+<a class="action-link" href="projects/f1.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: FAB — Foundry to Metrology -->
+<article class="project-card-new project-order-6">
+<div class="project-img-container">
+<img alt="Boîtier de roulement AlSi7 après coulée" decoding="async" loading="lazy" src="../assets/images/projects/fab/cast-raw-part.webp"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // PRODUCTION · FONDERIE · MÉTROLOGIE
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Projet FAB — Butée à billes
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Industrialisation de bout en bout d'une pièce AlSi7, depuis le moulage sable et l'usinage jusqu'au contrôle géométrique.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">Fabrication</span>
+<span class="tech-badge">Fonderie</span>
+<span class="tech-badge">Usinage CNC</span>
+<span class="tech-badge">Métrologie</span>
+</div>
+<a class="action-link" href="projects/fab.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Bicopter Elevation Control -->
+<article class="project-card-new project-order-1">
+<div class="project-img-container">
+<img alt="Bicopter de laboratoire utilisé pour le contrôle numérique de l'élévation" src="../assets/images/projects/cnam/bicopter-test-rig.webp" style="object-position: center 59%;"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // INGÉNIERIE DE COMMANDE · MÉCATRONIQUE
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Commande en élévation d’un bicoptère
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Identification expérimentale et contrôle numérique par retour d'état d'un système de laboratoire à double rotor.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">MATLAB / Simulink</span>
+<span class="tech-badge">dSPACE</span>
+<span class="tech-badge">Retour d’état</span>
+<span class="tech-badge">Identification</span>
+</div>
+<a class="action-link" href="projects/cnam.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Cam-Driven Industrial Capping Machine -->
+<article class="project-card-new">
+<div class="project-img-container">
+<img alt="Mécanisme à cames et rouleaux conçu pour une capsuleuse industrielle" src="../assets/images/projects/capping-machine/elastomer-concept.webp" style="object-position: 24% center;"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // CONCEPTION MÉCANIQUE · OPTIMISATION
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Bouchonneuse industrielle à came
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Synthèse d’un mécanisme came-galet combinant cinématique, mécanique du contact, CAD et exploration de l’espace de conception avec Python.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">CAD</span>
+<span class="tech-badge">Python</span>
+<span class="tech-badge">Contact de Hertz</span>
+<span class="tech-badge">TRIZ</span>
+</div>
+<a class="action-link" href="projects/capping-machine.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Rim-Driven Hydraulic Turbine -->
+<article class="project-card-new project-order-3 turbine-project-card">
+<div class="project-img-container">
+<img alt="Turbine hydraulique entraînée par jante modèle CAD" src="../assets/images/projects/turbine/turbine-cad.webp" style="object-position: center 48%;"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // SYSTÈMES ÉNERGÉTIQUES · MULTIPHYSIQUE
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Turbine hydraulique à entraînement périphérique
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Développement complet d’une turbine, du dimensionnement hydraulique et de la CAD jusqu’à la CFD, au prototypage et à la validation expérimentale.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">CATIA V5</span>
+<span class="tech-badge">Star-CCM+</span>
+<span class="tech-badge">FEM</span>
+<span class="tech-badge">Prototypage</span>
+</div>
+<a class="action-link" href="projects/turbine.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Industrial Gear Reducer -->
+<article class="project-card-new project-order-4">
+<div class="project-img-container">
+<img alt="Coupe de l’avant-projet d’un réducteur industriel de 7 kW" src="../assets/images/projects/reducer/assembly-section.webp" style="object-fit: contain; background: #ffffff;"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // CONCEPTION DE MACHINES · AVANT-PROJET
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Réducteur industriel
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Avant-projet d’un réducteur à engrenages droits de 7 kW, de l’architecture système et du dimensionnement jusqu’à la lubrification et l’intégration complète.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">Excel</span>
+<span class="tech-badge">Conception de machines</span>
+<span class="tech-badge">Engrenages droits</span>
+<span class="tech-badge">Prédimensionnement</span>
+</div>
+<a class="action-link" href="projects/reducer.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Plasticity & Limit Analysis -->
+<article class="project-card-new">
+<div class="project-img-container">
+<img alt="Champ de contraintes Abaqus dans un cadre fixe élastoplastique" src="../assets/images/projects/plasticity/abaqus-2d-stress.webp" style="object-fit: contain; background: #ffffff;"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // PLASTICITÉ · ÉLÉMENTS FINIS NON LINÉAIRES
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Plasticité &amp; analyse limite
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Tests d'effondrement expérimentaux comparés aux mécanismes analytiques et aux modèles Abaqus pilotés par Python.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">Python</span>
+<span class="tech-badge">Abaqus</span>
+<span class="tech-badge">Plasticité</span>
+<span class="tech-badge">Analyse limite</span>
+</div>
+<a class="action-link" href="projects/plasticity.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Aircraft Brake System -->
+<article class="project-card-new project-order-4">
+<div class="project-img-container">
+<img alt="Système de freinage d’avion" src="../assets/images/personal/brake_system_mathis.jpeg"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // SYSTÈMES MÉCANIQUES
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Système de freinage d’avion
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Conception préliminaire d’un frein d’avion couvrant la modélisation CAO, le dimensionnement et la dissipation d’énergie.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">CAD</span>
+<span class="tech-badge">Conception mécanique</span>
+<span class="tech-badge">Dissipation d'énergie</span>
+<span class="tech-badge">Analyse de sécurité</span>
+</div>
+<a class="action-link" href="projects/aircraft-brake.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- project Shoulder Implant  -->
+<!-- <article class="project-card-new">
+          <div class="project-img-container">
+            <img src="../assets/images/projects/prosthesis/cover.png" alt="Prosthesis" />
+          </div>
+          <div class="project-body">
+            <span class="page-subtitle" style="font-size: 0.8rem;">// BIOTECH</span>
+            <h3 style="margin-top: 10px; font-size: 1.3rem;">Shoulder Implant Opt.</h3>
+            <p style="font-size: 0.9rem; flex-grow: 1;">
+              Finite Element Analysis (FEA) of the glenoid component. Analyzed contact mechanics to prevent loosening.
+            </p>
+            <div class="tech-stack-row">
+              <span class="tech-badge">FEM Analysis</span>
+              <span class="tech-badge">Biomechanics</span>
+            </div>
+            <a href="#" class="action-link">View Case Study</a>
+          </div>
+        </article> -->
+<!-- Project: FANUC -->
+<article class="project-card-new project-order-5">
+<div class="project-img-container">
+<img alt="Cellule de coulée robotisée FANUC" src="../assets/images/projects/fanuc/cover.png"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // ROBOTIQUE INDUSTRIELLE · AUTOMATISATION
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Cellule robotisée de coulée FANUC
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Conception d'une cellule de coulée robotisée FANUC pour des opérations de fonderie sécurisées et automatisées.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">Robotique industrielle</span>
+<span class="tech-badge">FANUC</span>
+<span class="tech-badge">Conception du système</span>
+</div>
+<a class="action-link" href="projects/fanuc.html">Voir l’étude de cas</a>
+</div>
+</article>
+<!-- Project: Butterfly Piezo Speaker -->
+<article class="project-card-new project-order-24">
+<div class="project-img-container">
+<img alt="Vue de face du prototype de haut-parleur piézoélectrique en forme de papillon" src="../assets/images/projects/speaker/speaker-card.webp" style="object-fit: contain; background: #ffffff;"/>
+</div>
+<div class="project-body">
+<span class="page-subtitle" style="font-size: 0.8rem;">
+            // STRUCTURES INTELLIGENTES · PROTOTYPAGE
+          </span>
+<h3 style="margin-top: 10px; font-size: 1.3rem;">
+            Haut-parleur piézoélectrique papillon
+          </h3>
+<p style="font-size: 0.9rem; flex-grow: 1;">
+            Une preuve de concept de haut-parleur stéréo compact construit autour de deux ailes composites actives.
+          </p>
+<div class="tech-stack-row">
+<span class="tech-badge">Composites</span>
+<span class="tech-badge">PZT</span>
+<span class="tech-badge">Abaqus</span>
+<span class="tech-badge">Acoustique</span>
+</div>
+<a class="action-link" href="projects/speaker.html">Voir l’étude de cas</a>
+</div>
+</article>
+</div>
+</main>
+</div>
+<script src="../assets/js/script.js?v=10"></script>
+</body>
+</html>

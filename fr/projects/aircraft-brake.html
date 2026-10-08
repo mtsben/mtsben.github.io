@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Système de freinage d’avion | Mathis Benchikh</title><link href="../../en/projects/aircraft-brake.html" hreflang="en" rel="alternate"/><link href="aircraft-brake.html" hreflang="fr" rel="alternate"/><link href="../../en/projects/aircraft-brake.html" hreflang="x-default" rel="alternate"/>
+<!-- Core styles and icon fonts -->
+<link href="../../assets/css/style.css?v=10" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../../assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#0f1115" name="theme-color"/>
+<style>
+    /* Page-specific layout elements */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .project-banner {
+      position: relative;
+      height: 350px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      margin-bottom: 30px;
+      background: #000;
+    }
+
+    .project-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+
+    .project-banner-content {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      z-index: 2;
+      padding-right: 20px;
+    }
+
+    .pdf-embed {
+      width: 100%;
+      height: 80vh;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      background: #000;
+    }
+  </style>
+<link href="../../assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="Mathis Benchikh" name="author"/><link href="../../assets/css/personalization.css" rel="stylesheet"/></head>
+<body class="homepage">
+<!-- App layout: fixed sidebar + main content -->
+<div class="app-layout">
+<aside class="sidebar slide-up">
+<div class="profile-section">
+<a href="../index.html" style="text-decoration: none; color: inherit;">
+<span class="logo-text">MB.</span>
+</a>
+<span class="role-text">ÉLÈVE-INGÉNIEUR<br/>Arts et Métiers · Cranfield</span>
+</div>
+<nav class="nav-links">
+<a class="nav-item" href="../index.html">
+<i class="fas fa-home"></i> Accueil
+        </a>
+<a class="nav-item active" href="../projects.html">
+<i class="fas fa-code-branch"></i> Projets
+        </a>
+<a class="nav-item" href="../resume.html">
+<i class="fas fa-file-alt"></i> CV
+        </a>
+<a class="nav-item" href="../academics.html">
+<i class="fas fa-graduation-cap"></i> Formation
+        </a>
+<a class="nav-item" href="../experience.html">
+<i class="fas fa-briefcase"></i> Expérience
+        </a>
+<a class="nav-item" href="../beyond.html">
+<i class="fas fa-compass"></i> Au-delà de l’ingénierie
+        </a>
+</nav>
+<div class="sidebar-footer">
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+<a aria-label="Profil LinkedIn de Mathis Benchikh" href="https://www.linkedin.com/in/mathis-benchikh-968475348/" onmouseout="this.style.color='#7a8595'" onmouseover="this.style.color='#111827'" rel="noopener noreferrer" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+<!-- <a href="https://github.com/mtsben" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile"
+             style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;"
+             onmouseover="this.style.color='#111827'"
+             onmouseout="this.style.color='#7a8595'">
+            <i class="fab fa-github"></i>
+          </a> -->
+<a aria-label="Écrire à Mathis Benchikh" href="mailto:benchikh.mathis@gmail.com" onmouseout="this.style.color='#7a8595'" onmouseover="this.style.color='#111827'" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+<p style="opacity: 0.5; font-size: 0.75rem; margin: 0;">© 2026 Mathis Benchikh</p>
+</div>
+</aside>
+<main class="main-content">
+<!-- Back to projects grid -->
+<div class="slide-up delay-1" style="margin-bottom: 20px;">
+<a href="../projects.html" onmouseout="this.style.color='#7a8595'" onmouseover="this.style.color='#111827'" style="color: #6b7280; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; transition: color 0.3s;">
+<i class="fas fa-arrow-left"></i> RETOUR AUX PROJETS
+        </a>
+</div>
+<!-- Hero banner -->
+<div class="project-banner slide-up delay-1">
+<img alt="Système de freinage pour avions légers" src="../../assets/images/projects/aircraft-brake/case-study-cover.png"/>
+<div class="project-banner-content">
+<h1 style="font-size: 2.5rem; margin: 0; color: #fff; text-shadow: 0 4px 10px rgba(0,0,0,0.8);">Système de freinage d’avion</h1>
+<p>Conception préliminaire d’un frein à étrier flottant : architecture, intégration CAO et vérifications mécaniques.</p>
+</div>
+</div>
+<div class="content-grid">
+<div class="col-8 glass-panel slide-up delay-2">
+<h2 style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 20px;">
+<i class="fas fa-info-circle" style="color: #38bdf8; margin-right: 10px;"></i> Aperçu de la mission
+          </h2>
+<p>
+            Projet d'ingénierie étudiant axé sur la conception d'un système de freinage complet pour une roue d'avion léger. La portée couvrait l'architecture fonctionnelle, l'intégration du CAD et les vérifications techniques clés sans répéter les calculs complets.
+          </p>
+<p style="margin-top: 15px; color: #374151; line-height: 1.8;">
+<strong>Objectif:</strong> fournir un ensemble compact, sûr et entièrement démontable, du pivot de roue et des roulements au disque, aux plaquettes, à l'étrier flottant, à l'interface de clé et à la fixation pour avion.
+          </p>
+</div>
+<aside aria-label="OUTILS ET COMPOSANTS" class="project-tools-panel glass-panel col-4"><h3>// OUTILS ET COMPOSANTS</h3><ul><li>Fusion 360 (CAD)</li><li>Feuilles de calcul Excel</li><li>Roulements SKF/SNR + fixations std</li><li>Arbre RDM + contrôles thermiques</li></ul></aside>
+<!-- Full case study embedded PDF -->
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">01 · CONCEPTION PRÉLIMINAIRE</span>
+<h2>Une conception conduite du besoin au dossier technique</h2>
+</div>
+<ol aria-label="Démarche de conception du frein" class="engineering-flow">
+<li>
+<span class="flow-number">01</span>
+<strong>Besoin et architecture</strong>
+<p>Encombrement, couple de freinage, sécurité et démontabilité ; comparaison entre étrier fixe et flottant.</p>
+</li>
+<li>
+<span class="flow-number">02</span>
+<strong>Intégration CAO</strong>
+<p>Modélisation des pièces spécifiques et intégration des composants standards sous Fusion 360.</p>
+</li>
+<li>
+<span class="flow-number">03</span>
+<strong>Vérifications</strong>
+<p>Choix des roulements, visserie, clavette, disque et tenue de l’arbre.</p>
+</li>
+<li>
+<span class="flow-number">04</span>
+<strong>Documentation</strong>
+<p>Plan d’ensemble, coupes, notice de calcul et logique de maintenance.</p>
+</li>
+</ol>
+</section>
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">02 · ARCHITECTURE</span>
+<h2>Un assemblage compact et démontable</h2>
+</div>
+<p>L’étrier flottant a été retenu pour sa compacité et sa simplicité d’intégration. La pression hydraulique agit sur le piston et les plaquettes ; l’étrier se translate sur sa glissière pour serrer les deux faces du disque. La roue tourne autour d’un arbre fixe, guidée par deux roulements coniques 32004X montés en O et précontraints.</p>
+<div class="case-gallery">
+<figure class="case-figure">
+<button aria-label="Agrandir : Intégration côté roue" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Intégration côté roue" loading="lazy" src="../../assets/images/projects/aircraft-brake/assembly-front.webp"/>
+</button>
+<figcaption>
+<strong>Intégration côté roue</strong>
+<span>Le porte-disque, la bague de réduction et les fixations relient le disque à la roue.</span>
+</figcaption>
+</figure>
+<figure class="case-figure">
+<button aria-label="Agrandir : Étrier, guidage et interface avion" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Étrier, guidage et interface avion" loading="lazy" src="../../assets/images/projects/aircraft-brake/assembly-rear.webp"/>
+</button>
+<figcaption>
+<strong>Étrier, guidage et interface avion</strong>
+<span>Assemblage montrant l’étrier mobile en translation, le guide linéaire et l’interface de fixation à la structure de l'avion.</span>
+</figcaption>
+</figure>
+</div>
+<div class="case-note">
+<strong>Transmission des efforts.</strong> Le disque est solidaire de la roue par le porte-disque. Le guidage de l’étrier transmet la réaction de freinage vers le bâti ; les roulements reprennent les efforts radiaux et axiaux. Les interfaces boulonnées et la clavette font l’objet de vérifications distinctes.</div>
+</section>
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">03 · VÉRIFICATIONS</span>
+<h2>Justifier les composants et les interfaces</h2>
+</div>
+<div class="equation-grid">
+<article class="equation-card">
+<h3>Roulements et précontrainte</h3>
+<p>Supprimer le jeu interne et vérifier l’absence de décollement dans le cas dimensionnant.</p>
+</article>
+<article class="equation-card">
+<h3>Assemblages et clavette</h3>
+<p>Vérifier le non-glissement et le matage des liaisons, avec des vis M6 de classe 8.8 et une clavette normalisée.</p>
+</article>
+<article class="equation-card">
+<h3>Arbre : flexion et torsion</h3>
+<p>Une analyse en élasticité linéaire conduit à un coefficient de sécurité calculé de l’ordre de 3 pour le cas étudié.</p>
+</article>
+<article class="equation-card">
+<h3>Disque : bilan thermique</h3>
+<p>Une estimation simplifiée de l’énergie dissipée et des transferts thermiques vérifie la température admissible du disque.</p>
+</article>
+</div>
+</section>
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">04 · FABRICATION ET MAINTENANCE</span>
+<h2>Préparer la fabrication et les interventions</h2>
+</div>
+<p>Les portées et alésages sont prévus au tournage, les rainures et formes de l’étrier au fraisage, les fixations au perçage et taraudage. L’étrier est conçu en deux pièces pour rester usinable. Sa dépose depuis la glissière donne accès aux plaquettes ; l’écrou à encoches permet de régler la précontrainte et de démonter la roue.</p>
+<p class="case-note">Le travail reste une conception préliminaire. Les vérifications reposent sur des modèles simplifiés ; aucun prototype de frein ni essai physique n’est documenté. Les cycles thermiques, la fatigue, les vibrations, les tolérances et les contraintes dans l’étrier et la glissière restent à approfondir.</p>
+</section>
+<div class="col-12 glass-panel slide-up delay-3" style="padding: 15px;">
+<h2 style="margin-bottom: 20px;">Étude de cas PDF (EN)</h2>
+<iframe class="pdf-embed" src="../../assets/documents/projects/aircraft-brake/airplane-break.pdf?v=20" title="Étude de cas sur le système de freinage d’avion, en anglais"></iframe>
+</div>
+</div>
+</main>
+</div>
+<script src="../../assets/js/script.js?v=10"></script>
+</body>
+</html>
+

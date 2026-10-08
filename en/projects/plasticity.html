@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Experimental and numerical study of elastoplastic structures using limit analysis and Python-driven Abaqus models." name="description"/>
+<title>Plasticity &amp; Limit Analysis | Mathis Benchikh</title>
+<link href="plasticity.html" hreflang="en" rel="alternate"/>
+<link href="../../fr/projects/plasticity.html" hreflang="fr" rel="alternate"/>
+<link href="plasticity.html" hreflang="x-default" rel="alternate"/>
+<link href="../../assets/css/style.css?v=10" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../../assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#111827" name="theme-color"/>
+<link href="../../assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="Mathis Benchikh" name="author"/><link href="../../assets/css/personalization.css" rel="stylesheet"/></head>
+<body class="homepage turbine-page plasticity-page">
+<div class="app-layout">
+<aside class="sidebar slide-up">
+<div class="profile-section">
+<a href="../index.html" style="text-decoration: none; color: inherit;"><span class="logo-text">MB.</span></a>
+<span class="role-text">GRADUATE ENGINEERING STUDENT<br/>Arts et Métiers · Cranfield</span>
+</div>
+<nav class="nav-links">
+<a class="nav-item" href="../index.html"><i class="fas fa-home"></i> Dashboard</a>
+<a class="nav-item active" href="../projects.html"><i class="fas fa-code-branch"></i> Projects</a>
+<a class="nav-item" href="../resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+<a class="nav-item" href="../academics.html"><i class="fas fa-graduation-cap"></i> Academics</a>
+<a class="nav-item" href="../experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+<a class="nav-item" href="../beyond.html"><i class="fas fa-compass"></i> Beyond Engineering</a>
+</nav>
+<div class="sidebar-footer">
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+<a aria-label="Mathis Benchikh's LinkedIn profile" href="https://www.linkedin.com/in/mathis-benchikh-968475348/" rel="noopener noreferrer" style="color: #7a8595; font-size: 1.3rem;" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a aria-label="Email Mathis Benchikh" href="mailto:benchikh.mathis@gmail.com" style="color: #7a8595; font-size: 1.3rem;"><i class="fas fa-envelope"></i></a>
+</div>
+<p style="opacity: 0.5; font-size: 0.75rem; margin: 0;">© 2026 Mathis Benchikh</p>
+</div>
+</aside>
+<main class="main-content turbine-main plasticity-main">
+<div class="slide-up delay-1 turbine-back-link">
+<a href="../projects.html"><i class="fas fa-arrow-left"></i> RETURN TO MATRIX</a>
+</div>
+<header class="plasticity-hero slide-up delay-1">
+<div class="plasticity-hero-copy">
+<span class="turbine-eyebrow">// EXPERIMENTAL MECHANICS · NONLINEAR FEA</span>
+<h1>Plasticity &amp;<br/>Limit Analysis</h1>
+<p>From physical testing to collapse prediction: an elastoplastic study combining analytical mechanisms with Python-driven Abaqus simulations.</p>
+<div class="turbine-hero-actions">
+<a class="turbine-button turbine-button-primary" download="TP_PLASTICITE_FINAL.pdf" href="../../assets/documents/projects/plasticity/tp-plasticite-final.pdf?v=20"><i class="fas fa-download"></i> Download Full Report (FR)</a>
+</div>
+</div>
+<button aria-label="Enlarge the frame test bench" class="plasticity-hero-visual" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Fixed-frame experimental test bench" fetchpriority="high" src="../../assets/images/projects/plasticity/frame-test-bench.webp"/>
+<span>Fixed frame · physical experiment</span></button>
+</header>
+<section aria-label="Project key metrics" class="turbine-metrics plasticity-metrics slide-up delay-2">
+<article><strong>100 kN</strong><span>MTS hydraulic test machine</span></article>
+<article><strong>1D + 2D</strong><span>Abaqus modelling strategies</span></article>
+<article><strong>3</strong><span>plastic hinges at collapse</span></article>
+<article><strong>423 N</strong><span>analytical frame limit load</span></article>
+</section>
+<div class="project-overview"><section class="turbine-intro glass-panel slide-up delay-2">
+<div>
+<span class="turbine-section-index">01 · OBJECTIVE</span>
+<h2>Connect the test bench to the numerical model</h2>
+</div>
+<p>A three-point bending beam and a fixed frame were loaded beyond the elastic range. Experimental curves, limit analysis and nonlinear finite-element results were then compared to identify yielding, plastic hinges and collapse loads.</p>
+</section><aside aria-label="TOOLS AND COMPONENTS" class="project-tools-panel glass-panel"><h3>// TOOLS AND COMPONENTS</h3><ul><li>Python</li><li>Abaqus · 1D / 2D</li><li>MTS · 100 kN</li><li>Limit analysis</li><li>Force–displacement measurements</li></ul></aside></div>
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">02 · PHYSICAL TESTS</span>
+<h2>Observing yielding before modelling it</h2>
+</div>
+<div class="case-gallery case-gallery-three">
+<figure class="case-figure case-figure-photo">
+<button aria-label="Enlarge: Frame test bench" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Frame test bench" loading="lazy" src="../../assets/images/projects/plasticity/frame-test-bench.webp"/>
+</button>
+<figcaption>
+<strong>Frame test bench</strong>
+<span>Force and displacement measurements on a frame fixed at both bases.</span>
+</figcaption>
+</figure>
+<figure class="case-figure case-figure-photo">
+<button aria-label="Enlarge: Loading and unloading" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Loading and unloading" loading="lazy" src="../../assets/images/projects/plasticity/frame-loading.webp"/>
+</button>
+<figcaption>
+<strong>Loading and unloading</strong>
+<span>Following the frame response reveals residual deformation and plastic hinges.</span>
+</figcaption>
+</figure>
+<figure class="case-figure case-figure-photo">
+<button aria-label="Enlarge: Three-point bending" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Three-point bending" loading="lazy" src="../../assets/images/projects/plasticity/three-point-bending.webp"/>
+</button>
+<figcaption>
+<strong>Three-point bending</strong>
+<span>The 100 kN MTS machine imposes displacement at the midpoint of the simply supported beam.</span>
+</figcaption>
+</figure>
+</div>
+<p>The frame load reaches 432 N. Stiffness falls from about 38 to 3 N/mm during loading, and three plastic hinges are observed. The complete quantitative beam-test data remain to be recovered.</p>
+</section>
+<section class="case-section"><div class="turbine-section-heading"><span class="turbine-section-index">03 · CALIBRATION</span><h2>Relating material parameters to measurements</h2></div><p>The supplied Python script is adapted to the measured geometries and material properties. Hardening parameters are then fitted to characteristic slopes and loads in the force–displacement curves: σᵧ = 315 MPa and E₁ = 2,150 MPa for the beam; σᵧ = 380 MPa and E₁ = 1,700 MPa for the frame.</p></section>
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">04 · ANALYTICAL BASIS</span>
+<h2>Equations linking section, span and collapse</h2>
+</div>
+<div class="equation-grid">
+<article class="equation-card">
+<h3>Plastic moment</h3>
+<math aria-label="Plastic moment" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<msub>
+<mi>M</mi>
+<mi>p</mi>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msub>
+<mi>σ</mi>
+<mi>y</mi>
+</msub>
+<mi>b</mi>
+<msup>
+<mi>h</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>4</mn>
+</mfrac>
+</math>
+<p>Rectangular section: b is the width, h the height and σᵧ the yield stress.</p>
+</article>
+<article class="equation-card">
+<h3>Three-point bending beam</h3>
+<math aria-label="Three-point bending beam" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<msub>
+<mi>F</mi>
+<mi>ult</mi>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>4</mn>
+<msub>
+<mi>M</mi>
+<mi>p</mi>
+</msub>
+</mrow>
+<mi>L</mi>
+</mfrac>
+</math>
+<p>One hinge at the midpoint of span L: 2,177.3 N calculated in the report.</p>
+</article>
+<article class="equation-card">
+<h3>Vertically loaded frame</h3>
+<math aria-label="Vertically loaded frame" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<msub>
+<mi>F</mi>
+<mi>ult</mi>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>8</mn>
+<msub>
+<mi>M</mi>
+<mi>p</mi>
+</msub>
+</mrow>
+<mi>L</mi>
+</mfrac>
+</math>
+<p>The lowest admissible mechanism gives 423 N, compared with 432 N measured.</p>
+</article>
+<article class="equation-card">
+<h3>Angle convention</h3>
+<math aria-label="Angle convention" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<msub>
+<mi>α</mi>
+<mi>ana</mi>
+</msub>
+<mo>=</mo>
+<mn>90</mn>
+<mo>°</mo>
+<mo>−</mo>
+<msub>
+<mi>α</mi>
+<mi>Abaqus</mi>
+</msub>
+</math>
+<p>In Abaqus, 0° denotes vertical loading. Comparison uses the analytical angle and the absolute load.</p>
+</article>
+</div>
+<p>Limit analysis uses virtual work and selects the smallest load among admissible mechanisms. The three hinges observed in the test are distinguished from the idealized mechanisms considered in the calculation.</p>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">05 · COLLAPSE MECHANISMS</span>
+<h2>Predicting where the structure yields</h2>
+</div>
+<div class="plasticity-mechanism-grid">
+<figure class="turbine-figure plasticity-sketch">
+<button aria-label="Enlarge the inclined load diagram" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Inclined force decomposition on the fixed frame" loading="lazy" src="../../assets/images/projects/plasticity/inclined-load.webp"/>
+</button>
+<figcaption><strong>Inclined loading</strong><span>The load angle changes the balance between bending mechanisms.</span></figcaption>
+</figure>
+<figure class="turbine-figure plasticity-mechanisms">
+<button aria-label="Enlarge the five collapse mechanisms" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Five analytical plastic collapse mechanisms for the fixed frame" loading="lazy" src="../../assets/images/projects/plasticity/collapse-mechanisms.webp"/>
+</button>
+<figcaption><strong>Five candidate mechanisms</strong><span>Virtual work identifies the governing hinge pattern for each angle.</span></figcaption>
+</figure>
+<figure class="turbine-figure plasticity-map">
+<button aria-label="Enlarge the mechanism transition map" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Analytical collapse-load curves and mechanism transition angles" loading="lazy" src="../../assets/images/projects/plasticity/mechanism-map.webp"/>
+</button>
+<figcaption><strong>Mechanism map</strong><span>Curve intersections reveal the transitions near 59.5° and 81.6°.</span></figcaption>
+</figure>
+</div>
+</section>
+<section class="plasticity-code-section slide-up" id="python-abaqus">
+<div class="plasticity-code-copy">
+<span class="plasticity-code-label"><i class="fab fa-python"></i> PYTHON-DRIVEN ABAQUS</span>
+<h2>Simulation built through code</h2>
+<p>A Python script was adapted to create and parameterize the Abaqus models with the selected geometry and material properties. This made the 1D/2D setup reproducible and supported the study of multiple loading configurations.</p>
+<div aria-label="Python Abaqus workflow" class="plasticity-code-flow">
+<span>Geometry</span><i class="fas fa-arrow-right"></i><span>Material law</span><i class="fas fa-arrow-right"></i><span>Abaqus solve</span><i class="fas fa-arrow-right"></i><span>Results</span>
+</div>
+</div>
+<figure class="plasticity-code-figure">
+<button aria-label="Enlarge the one-dimensional Abaqus model" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Deformed one-dimensional fixed-frame model generated in Abaqus" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-1d.webp"/>
+</button>
+<figcaption>Python-parametrized 1D model</figcaption>
+</figure>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">06 · SIMULATIONS &amp; COMPARISON</span>
+<h2>Three views of the same nonlinear response</h2>
+</div>
+<div class="plasticity-validation-grid">
+<figure class="turbine-figure plasticity-figure-main">
+<button aria-label="Enlarge the Abaqus stress result" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Two-dimensional Abaqus stress field showing plastic zones in the fixed frame" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-2d-stress.webp"/>
+</button>
+<figcaption><strong>2D stress field</strong><span>Plastic zones develop at the load point and upper corners.</span></figcaption>
+</figure>
+<figure class="turbine-figure plasticity-chart">
+<button aria-label="Enlarge the force displacement comparison" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Force–displacement comparison between experimental and numerical results" loading="lazy" src="../../assets/images/projects/plasticity/force-displacement.webp"/>
+</button>
+<figcaption><strong>Force–displacement comparison</strong><span>The numerical curve reproduces the global experimental response.</span></figcaption>
+</figure>
+</div>
+<div class="turbine-result-callout plasticity-result-callout">
+<div><span>Frame collapse load</span><strong>423 / 432 N</strong></div>
+<p>Limit analysis predicts 423 N, close to the 432 N measured during the physical test.</p>
+</div>
+</section>
+<section class="turbine-section slide-up">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">07 · PARAMETRIC ABAQUS STUDY</span>
+<h2>Following plastic zones as the load rotates</h2>
+</div>
+<div class="plasticity-angle-grid">
+<figure><button aria-label="Enlarge the 15 degree Abaqus result" onclick="openLightbox(this.querySelector('img'))" type="button"><img alt="Abaqus plastic stress field for a 15 degree load angle" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-angle-15.webp"/></button><figcaption>α<sub>Abaqus</sub> = 15°</figcaption></figure>
+<figure><button aria-label="Enlarge the 45 degree Abaqus result" onclick="openLightbox(this.querySelector('img'))" type="button"><img alt="Abaqus plastic stress field for a 45 degree load angle" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-angle-45.webp"/></button><figcaption>α<sub>Abaqus</sub> = 45°</figcaption></figure>
+<figure><button aria-label="Enlarge the 75 degree Abaqus result" onclick="openLightbox(this.querySelector('img'))" type="button"><img alt="Abaqus plastic stress field for a 75 degree load angle" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-angle-75.webp"/></button><figcaption>α<sub>Abaqus</sub> = 75°</figcaption></figure>
+<figure><button aria-label="Enlarge the 90 degree Abaqus result" onclick="openLightbox(this.querySelector('img'))" type="button"><img alt="Abaqus plastic stress field for a 90 degree load angle" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-angle-90.webp"/></button><figcaption>α<sub>Abaqus</sub> = 90°</figcaption></figure>
+</div>
+<div class="plasticity-angle-results">
+<figure class="turbine-figure">
+<button aria-label="Enlarge the Abaqus transition result" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Abaqus stress field at the transition between two collapse mechanisms" loading="lazy" src="../../assets/images/projects/plasticity/abaqus-transition.webp"/>
+</button>
+<figcaption><strong>Transition near 60°</strong><span>The numerical plastic zones agree with the analytical mechanism change.</span></figcaption>
+</figure>
+<figure class="turbine-figure plasticity-chart">
+<button aria-label="Enlarge ultimate load versus angle curve" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Numerical ultimate load from Abaqus versus load angle" loading="lazy" src="../../assets/images/projects/plasticity/ultimate-load-angle.webp"/>
+</button>
+<figcaption><strong>Ultimate load vs. angle</strong><span>The angular sweep quantifies the changing collapse threshold.</span></figcaption>
+</figure>
+</div>
+</section>
+<section class="case-section">
+<div class="turbine-section-heading">
+<span class="turbine-section-index">08 · RESULTS AND LIMITATIONS</span>
+<h2>What the comparison supports</h2>
+</div>
+<p class="case-note">Plastic zones and the transition around 60° in the analytical convention help interpret the mechanisms. However, analytical curves and Abaqus points do not superpose satisfactorily, even after several angle-convention adjustments. Boundary conditions, modelling simplifications and mesh resolution are possible causes to investigate; their roles have not been established. Agreement of the vertical limit load with the test therefore does not validate the full angle study.</p>
+</section>
+<section class="turbine-report-cta plasticity-report-cta slide-up">
+<div>
+<span class="turbine-section-index">PROJECT DOCUMENTATION</span>
+<h2>See the complete methodology</h2>
+<p>Experimental data, analytical derivations and Abaqus results are documented in French.</p>
+</div>
+<a class="turbine-button turbine-button-primary" download="TP_PLASTICITE_FINAL.pdf" href="../../assets/documents/projects/plasticity/tp-plasticite-final.pdf?v=20"><i class="fas fa-download"></i> Download Full Report (FR)</a>
+</section>
+</main>
+</div>
+<script src="../../assets/js/script.js?v=10"></script>
+</body>
+</html>
+
