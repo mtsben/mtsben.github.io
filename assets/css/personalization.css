@@ -186,6 +186,10 @@
 .amspace-experience-card .research-experience-cta { text-decoration: none; }
 .amspace-experience-card .research-experience-cta:hover { text-decoration: underline; }
 
+/* The latest projects follow the three Dashboard overview cards. */
+.dashboard-latest-projects { min-width: 0; }
+.dashboard-latest-projects-title { margin: 0 0 20px; font-size: 1.5rem; }
+
 /* Two project previews share the original research row on the Dashboard. */
 .dashboard-featured-row {
   display: grid;
