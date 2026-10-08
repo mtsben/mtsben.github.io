@@ -118,7 +118,8 @@
   padding: 8px;
   background: #fff;
 }
-.resume-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.resume-page .page-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+.resume-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .resume-language-options { display: flex; flex-wrap: wrap; gap: 8px; }
 .resume-version-button,
 .resume-download {
