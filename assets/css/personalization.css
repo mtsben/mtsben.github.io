@@ -2,6 +2,22 @@
 .role-text { line-height: 1.7; }
 .personal-metrics > div { flex-wrap: wrap; }
 .personal-metrics span { overflow-wrap: anywhere; }
+/* Keep the research link legible on its dark project cover in every state. */
+.homepage .project-featured .project-featured-link {
+  color: #ffffff !important;
+  opacity: 1;
+  animation: none;
+  text-shadow: none;
+}
+.homepage .project-featured .project-featured-link:hover,
+.homepage .project-featured .project-featured-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.homepage .project-featured .project-featured-link:focus-visible {
+  outline: 2px solid #ffffff !important;
+  outline-offset: 6px;
+}
 .cpge-panel { cursor: default !important; }
 .cpge-panel > div { min-width: 0; }
 /* French turbine copy needs tighter spacing to keep the CAD preview visible. */
