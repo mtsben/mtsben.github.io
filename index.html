@@ -25,7 +25,7 @@
       } catch (_) {
         // English remains the default when storage is unavailable.
       }
-      window.location.replace(language + "/index.html");
+      window.location.replace(language + "/index.html" + window.location.search + window.location.hash);
     }());
   </script>
   <noscript><meta http-equiv="refresh" content="0; url=en/index.html" /></noscript>
