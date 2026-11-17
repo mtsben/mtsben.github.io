@@ -68,19 +68,40 @@ document.addEventListener("DOMContentLoaded", function() {
   const sidebar = document.querySelector('.sidebar');
   const navContainer = document.querySelector('.nav-links');
   if (sidebar && navContainer && !sidebar.querySelector('.mobile-menu-toggle')) {
+    const phoneLayout = window.matchMedia('(max-width: 767px)');
     const menuButton = document.createElement('button');
     menuButton.type = 'button';
     menuButton.className = 'mobile-menu-toggle';
     menuButton.setAttribute('aria-expanded', 'true');
+    if (!navContainer.id) navContainer.id = 'portfolio-navigation';
+    menuButton.setAttribute('aria-controls', navContainer.id);
     menuButton.innerHTML = '<i class="fas fa-bars"></i> Menu';
     menuButton.setAttribute('aria-label', language === 'fr' ? 'Afficher ou masquer la navigation' : 'Show or hide navigation');
 
+    const setMenuCollapsed = (collapsed) => {
+      sidebar.classList.toggle('mobile-collapsed', collapsed);
+      menuButton.setAttribute('aria-expanded', String(!collapsed));
+    };
     menuButton.addEventListener('click', () => {
-      const isCollapsed = sidebar.classList.toggle('mobile-collapsed');
-      menuButton.setAttribute('aria-expanded', String(!isCollapsed));
+      setMenuCollapsed(!sidebar.classList.contains('mobile-collapsed'));
     });
 
     sidebar.insertBefore(menuButton, navContainer);
+    setMenuCollapsed(phoneLayout.matches);
+    phoneLayout.addEventListener('change', (event) => setMenuCollapsed(event.matches));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && phoneLayout.matches && !sidebar.classList.contains('mobile-collapsed')) {
+        setMenuCollapsed(true);
+        menuButton.focus();
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (phoneLayout.matches && !sidebar.contains(event.target)) setMenuCollapsed(true);
+    });
+    navContainer.addEventListener('click', (event) => {
+      if (phoneLayout.matches && event.target.closest('a')) setMenuCollapsed(true);
+    });
 
     window.addEventListener('resize', () => {
       if (window.innerWidth > 1024) {
