@@ -325,13 +325,13 @@ function initLanguageControls(language) {
     ? {
         switcher: 'Choisir la langue',
         dialogTitle: 'Choisissez votre langue',
-        dialogText: 'Select your preferred language. Vous pourrez la modifier à tout moment.',
+        dialogText: '<span lang="en">You can change it at any time.</span><br><span lang="fr">Vous pourrez la modifier à tout moment.</span>',
         close: 'Continuer en anglais'
       }
     : {
         switcher: 'Choose language',
         dialogTitle: 'Choose your language',
-        dialogText: 'Select your preferred language. Vous pourrez la modifier à tout moment.',
+        dialogText: '<span lang="en">You can change it at any time.</span><br><span lang="fr">Vous pourrez la modifier à tout moment.</span>',
         close: 'Continue in English'
       };
 
